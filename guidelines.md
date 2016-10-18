@@ -17,4 +17,5 @@ Below are the steps to run this sample
 6. Access APIs with with below prefix url
 
 URL : http://<host>:9000/services/contacts/api/v1/contact
+
 Methods : GET/POST/PUT/DELETE
