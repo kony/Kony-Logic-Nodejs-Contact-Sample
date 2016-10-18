@@ -19,3 +19,12 @@ Below are the steps to run this sample
 URL : http://localhost:9000/services/contacts/api/v1/contact
 
 Methods : GET/POST/PUT/DELETE
+
+Payload : 
+
+{
+	"firstName" : "Test",
+	"lastName" : "User",
+	"mobileNumber" : "1234567890",
+	"emailId" : "admin@kony.com"
+} 
