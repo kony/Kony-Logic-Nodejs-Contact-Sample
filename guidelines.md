@@ -1,22 +1,20 @@
-MySQL:-
---------
-V12__UPGRADE_TO_7.1.0.3.sql
-V13__UPGRADE_TO_7.2.sql
+Below are the steps to run this sample
 
+1. Install node js runtime 6.2.2 or above
 
-MSSQL:-
------------
-V12__UPGRADE_TO_7.1.0.3.sql
-V13__UPGRADE_TO_7.2.sql
+2. Download zip file and extract
 
+3. Install npm modules dependencies for the sample package
 
-Oracle:-
-----------
-V12__UPGRADE_TO_7.1.0.3.sql
-V13__UPGRADE_TO_7.2.sql
+>npm install
 
+4. Run the sample app
 
-DB2:-
----------
-V12__UPGRADE_TO_7.1.0.3.sql
-V13__UPGRADE_TO_7.2.sql
+> node bin/www
+
+5. Application will start on 9000 port
+
+6. Access APIs with with below prefix url
+
+URL : http://<host>:9000/services/contacts/api/v1/contact
+Methods : GET/POST/PUT/DELETE
