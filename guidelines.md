@@ -6,7 +6,7 @@ Below are the steps to run this sample
 
 3. Install npm modules dependencies for the sample package
 
->npm install
+> npm install
 
 4. Run the sample app
 
