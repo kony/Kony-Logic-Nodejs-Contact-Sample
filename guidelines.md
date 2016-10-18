@@ -14,7 +14,7 @@ Below are the steps to run this sample
 
 5. Application will start on 9000 port
 
-6. Access APIs with with below prefix url
+6. Access APIs with below prefix url
 
 URL : http://localhost:9000/services/contacts/api/v1/contact
 
