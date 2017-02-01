@@ -16,7 +16,7 @@ Below are the steps to run this sample
 
 6. Access APIs with below prefix url
 
-URL : http://localhost:9000/services/contacts/api/v1/contact
+URL : http://localhost:9000/services/mailapp/api/v1/contact
 
 Methods : GET/POST/PUT/DELETE
 
