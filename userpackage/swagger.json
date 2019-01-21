@@ -1,0 +1,129 @@
+{
+	"info": {
+		"title": "Kony MobileFabric Logic (Node.js) sample application for managing Contacts",
+		"version": "1.0.0",
+		"description": "This sample application demonstrates use of Logic (Node.js) app in Kony MobileFabric"
+	},
+	"host": "localhost:9000",
+	"basePath": "/services/mailapp",
+	"swagger": "2.0",
+	"paths": {
+		"/api/v1/contact": {
+			"post": {
+				"tags": ["Contacts"],
+				"description": "Contact Details object",
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "Details",
+					"description": "Contact Details",
+					"in": "body",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/Contact Details"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "Successfully created"
+					}
+				},
+				"mfidentitylevel": "public"
+			},
+			"get": {
+				"tags": ["Contacts"],
+				"description": "Returns a Single Person Details",
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "id",
+					"description": "Register id",
+					"in": "query",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "Person Contact Details",
+						"schema": {
+							"$ref": ""
+						}
+					}
+				},
+				"mfidentitylevel": "public"
+			},
+			"put": {
+				"tags": ["Contacts"],
+				"description": "Contact Details object",
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "id",
+					"description": "Register id",
+					"in": "query",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "Details",
+					"description": "Contact Details",
+					"in": "body",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/Contact Details"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "Successfully created"
+					}
+				},
+				"mfidentitylevel": "anonymous"
+			},
+			"delete": {
+				"tags": ["Contacts"],
+				"description": "Delete Contact Details object",
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "id",
+					"description": "Register id",
+					"in": "query",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "Details",
+					"description": "Contact Details",
+					"in": "body",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/Contact Details"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "Successfully deleted"
+					}
+				},
+				"mfidentitylevel": "public"
+			}
+		}
+	},
+	"definitions": {
+		"Contact Details": {
+			"properties": {
+				"firstName": {
+					"type": "string"
+				},
+				"lastName": {
+					"type": "string"
+				},
+				"rollNumber": {
+					"type": "string"
+				},
+				"mobileNumber": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"responses": {},
+	"parameters": {},
+	"securityDefinitions": {},
+	"tags": []
+}
